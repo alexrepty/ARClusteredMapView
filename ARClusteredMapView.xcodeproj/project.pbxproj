@@ -1,0 +1,315 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B4BEAC39144DCDB200F070CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4BEAC38144DCDB200F070CA /* UIKit.framework */; };
+		B4BEAC3B144DCDB200F070CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4BEAC3A144DCDB200F070CA /* Foundation.framework */; };
+		B4BEAC3D144DCDB200F070CA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4BEAC3C144DCDB200F070CA /* CoreGraphics.framework */; };
+		B4BEAC43144DCDB200F070CA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B4BEAC41144DCDB200F070CA /* InfoPlist.strings */; };
+		B4BEAC45144DCDB200F070CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4BEAC44144DCDB200F070CA /* main.m */; };
+		B4BEAC49144DCDB200F070CA /* ARAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4BEAC48144DCDB200F070CA /* ARAppDelegate.m */; };
+		B4BEAC4C144DCDB200F070CA /* ARViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4BEAC4B144DCDB200F070CA /* ARViewController.m */; };
+		B4BEAC4F144DCDB200F070CA /* ARViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4BEAC4D144DCDB200F070CA /* ARViewController.xib */; };
+		B4BEAC5A144DD01900F070CA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4BEAC59144DD01900F070CA /* MapKit.framework */; };
+		B4BEAC5D144DD53200F070CA /* ARClusteredMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4BEAC5C144DD53200F070CA /* ARClusteredMapView.m */; };
+		B4BEAC64144DE9FA00F070CA /* ARClusteredAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = B4BEAC63144DE9FA00F070CA /* ARClusteredAnnotation.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B4BEAC34144DCDB200F070CA /* ARClusteredMapView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARClusteredMapView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4BEAC38144DCDB200F070CA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B4BEAC3A144DCDB200F070CA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B4BEAC3C144DCDB200F070CA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B4BEAC40144DCDB200F070CA /* ARClusteredMapView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ARClusteredMapView-Info.plist"; sourceTree = "<group>"; };
+		B4BEAC42144DCDB200F070CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B4BEAC44144DCDB200F070CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B4BEAC46144DCDB200F070CA /* ARClusteredMapView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ARClusteredMapView-Prefix.pch"; sourceTree = "<group>"; };
+		B4BEAC47144DCDB200F070CA /* ARAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARAppDelegate.h; sourceTree = "<group>"; };
+		B4BEAC48144DCDB200F070CA /* ARAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARAppDelegate.m; sourceTree = "<group>"; };
+		B4BEAC4A144DCDB200F070CA /* ARViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARViewController.h; sourceTree = "<group>"; };
+		B4BEAC4B144DCDB200F070CA /* ARViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARViewController.m; sourceTree = "<group>"; };
+		B4BEAC4E144DCDB200F070CA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ARViewController.xib; sourceTree = "<group>"; };
+		B4BEAC59144DD01900F070CA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B4BEAC5B144DD53200F070CA /* ARClusteredMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARClusteredMapView.h; sourceTree = "<group>"; };
+		B4BEAC5C144DD53200F070CA /* ARClusteredMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARClusteredMapView.m; sourceTree = "<group>"; };
+		B4BEAC62144DE9FA00F070CA /* ARClusteredAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARClusteredAnnotation.h; sourceTree = "<group>"; };
+		B4BEAC63144DE9FA00F070CA /* ARClusteredAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARClusteredAnnotation.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B4BEAC31144DCDB200F070CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4BEAC5A144DD01900F070CA /* MapKit.framework in Frameworks */,
+				B4BEAC39144DCDB200F070CA /* UIKit.framework in Frameworks */,
+				B4BEAC3B144DCDB200F070CA /* Foundation.framework in Frameworks */,
+				B4BEAC3D144DCDB200F070CA /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B4BEAC29144DCDB100F070CA = {
+			isa = PBXGroup;
+			children = (
+				B4BEAC3E144DCDB200F070CA /* ARClusteredMapView */,
+				B4BEAC37144DCDB200F070CA /* Frameworks */,
+				B4BEAC35144DCDB200F070CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B4BEAC35144DCDB200F070CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B4BEAC34144DCDB200F070CA /* ARClusteredMapView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B4BEAC37144DCDB200F070CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4BEAC59144DD01900F070CA /* MapKit.framework */,
+				B4BEAC38144DCDB200F070CA /* UIKit.framework */,
+				B4BEAC3A144DCDB200F070CA /* Foundation.framework */,
+				B4BEAC3C144DCDB200F070CA /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B4BEAC3E144DCDB200F070CA /* ARClusteredMapView */ = {
+			isa = PBXGroup;
+			children = (
+				B4BEAC55144DCFEB00F070CA /* ARClusteredMapView */,
+				B4BEAC47144DCDB200F070CA /* ARAppDelegate.h */,
+				B4BEAC48144DCDB200F070CA /* ARAppDelegate.m */,
+				B4BEAC4A144DCDB200F070CA /* ARViewController.h */,
+				B4BEAC4B144DCDB200F070CA /* ARViewController.m */,
+				B4BEAC4D144DCDB200F070CA /* ARViewController.xib */,
+				B4BEAC3F144DCDB200F070CA /* Supporting Files */,
+			);
+			path = ARClusteredMapView;
+			sourceTree = "<group>";
+		};
+		B4BEAC3F144DCDB200F070CA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B4BEAC40144DCDB200F070CA /* ARClusteredMapView-Info.plist */,
+				B4BEAC41144DCDB200F070CA /* InfoPlist.strings */,
+				B4BEAC44144DCDB200F070CA /* main.m */,
+				B4BEAC46144DCDB200F070CA /* ARClusteredMapView-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B4BEAC55144DCFEB00F070CA /* ARClusteredMapView */ = {
+			isa = PBXGroup;
+			children = (
+				B4BEAC5B144DD53200F070CA /* ARClusteredMapView.h */,
+				B4BEAC5C144DD53200F070CA /* ARClusteredMapView.m */,
+				B4BEAC62144DE9FA00F070CA /* ARClusteredAnnotation.h */,
+				B4BEAC63144DE9FA00F070CA /* ARClusteredAnnotation.m */,
+			);
+			path = ARClusteredMapView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B4BEAC33144DCDB200F070CA /* ARClusteredMapView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4BEAC52144DCDB200F070CA /* Build configuration list for PBXNativeTarget "ARClusteredMapView" */;
+			buildPhases = (
+				B4BEAC30144DCDB200F070CA /* Sources */,
+				B4BEAC31144DCDB200F070CA /* Frameworks */,
+				B4BEAC32144DCDB200F070CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARClusteredMapView;
+			productName = ARClusteredMapView;
+			productReference = B4BEAC34144DCDB200F070CA /* ARClusteredMapView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B4BEAC2B144DCDB100F070CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = B4BEAC2E144DCDB100F070CA /* Build configuration list for PBXProject "ARClusteredMapView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B4BEAC29144DCDB100F070CA;
+			productRefGroup = B4BEAC35144DCDB200F070CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B4BEAC33144DCDB200F070CA /* ARClusteredMapView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B4BEAC32144DCDB200F070CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4BEAC43144DCDB200F070CA /* InfoPlist.strings in Resources */,
+				B4BEAC4F144DCDB200F070CA /* ARViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B4BEAC30144DCDB200F070CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4BEAC45144DCDB200F070CA /* main.m in Sources */,
+				B4BEAC49144DCDB200F070CA /* ARAppDelegate.m in Sources */,
+				B4BEAC4C144DCDB200F070CA /* ARViewController.m in Sources */,
+				B4BEAC5D144DD53200F070CA /* ARClusteredMapView.m in Sources */,
+				B4BEAC64144DE9FA00F070CA /* ARClusteredAnnotation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B4BEAC41144DCDB200F070CA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4BEAC42144DCDB200F070CA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B4BEAC4D144DCDB200F070CA /* ARViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4BEAC4E144DCDB200F070CA /* en */,
+			);
+			name = ARViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B4BEAC50144DCDB200F070CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B4BEAC51144DCDB200F070CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B4BEAC53144DCDB200F070CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ARClusteredMapView/ARClusteredMapView-Prefix.pch";
+				INFOPLIST_FILE = "ARClusteredMapView/ARClusteredMapView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B4BEAC54144DCDB200F070CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ARClusteredMapView/ARClusteredMapView-Prefix.pch";
+				INFOPLIST_FILE = "ARClusteredMapView/ARClusteredMapView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B4BEAC2E144DCDB100F070CA /* Build configuration list for PBXProject "ARClusteredMapView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4BEAC50144DCDB200F070CA /* Debug */,
+				B4BEAC51144DCDB200F070CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4BEAC52144DCDB200F070CA /* Build configuration list for PBXNativeTarget "ARClusteredMapView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4BEAC53144DCDB200F070CA /* Debug */,
+				B4BEAC54144DCDB200F070CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B4BEAC2B144DCDB100F070CA /* Project object */;
+}
