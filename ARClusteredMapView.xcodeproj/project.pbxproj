@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B47A06A818D3234600B4E95D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B47A06A718D3234600B4E95D /* Default-568h@2x.png */; };
 		B4BEAC39144DCDB200F070CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4BEAC38144DCDB200F070CA /* UIKit.framework */; };
 		B4BEAC3B144DCDB200F070CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4BEAC3A144DCDB200F070CA /* Foundation.framework */; };
 		B4BEAC3D144DCDB200F070CA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4BEAC3C144DCDB200F070CA /* CoreGraphics.framework */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B47A06A718D3234600B4E95D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		B4BEAC34144DCDB200F070CA /* ARClusteredMapView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARClusteredMapView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4BEAC38144DCDB200F070CA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B4BEAC3A144DCDB200F070CA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -59,6 +61,7 @@
 		B4BEAC29144DCDB100F070CA = {
 			isa = PBXGroup;
 			children = (
+				B47A06A718D3234600B4E95D /* Default-568h@2x.png */,
 				B4BEAC3E144DCDB200F070CA /* ARClusteredMapView */,
 				B4BEAC37144DCDB200F070CA /* Frameworks */,
 				B4BEAC35144DCDB200F070CA /* Products */,
@@ -172,6 +175,7 @@
 			files = (
 				B4BEAC43144DCDB200F070CA /* InfoPlist.strings in Resources */,
 				B4BEAC4F144DCDB200F070CA /* ARViewController.xib in Resources */,
+				B47A06A818D3234600B4E95D /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
