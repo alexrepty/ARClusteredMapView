@@ -10,11 +10,23 @@
 
 @class ARClusteredAnnotation;
 
+/*!
+ *  NSNotification sent by ARClusteredMapView after a clustering run has finished.
+ */
 extern NSString *const ARClusteredMapViewDidUpdateClusteringNotification;
 
+/*!
+ *  ARClusteredMapView is a drop-in replacement for MKMapView which provides animated clustering of MKAnnotationViews.
+ *
+ *  See https://github.com/alexrepty/ARClusteredMapView/blob/master/README.md for more details.
+ */
 @interface ARClusteredMapView : MKMapView
 
-@property(nonatomic,assign,getter = isClustering)	BOOL clustering;
+/*!
+ @property clustering
+ @abstract If YES, ARClusteredMapView is currently in the process of clustering the MKAnnotationView instances.
+ */
+@property(assign, nonatomic, getter = isClustering) BOOL clustering;
 
 /*!
  @property calloutView
@@ -34,12 +46,21 @@ extern NSString *const ARClusteredMapViewDidUpdateClusteringNotification;
  */
 @property(assign, nonatomic) CGPoint annotationViewAnchorPoint;
 
-// call this when the map view changes
+/*!
+ *  Explicitly starts a run of the clustering process. ARClusteredMapView does this automatically when annotations are added or removed.
+ */
 - (void)updateClustering;
 
-// call this from mapView:didAddAnnotationViews: to animate pins into place
+/*!
+ *  Animates the supplied MKAnnotationView objects into place after they have been added. Should be called from the delegate's implementation of mapView:didAddAnnotationViews:.
+ *
+ *  @param views An NSArray containing references to MKAnnotationView objects.
+ */
 - (void)animateAnnotationViews:(NSArray *)views;
 
+/*!
+ *  Convenience method to remove all annotations from the map.
+ */
 - (void)removeAllAnnotations;
 
 @end
