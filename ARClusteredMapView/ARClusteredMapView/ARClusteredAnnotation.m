@@ -36,7 +36,6 @@ NSString *const kARClusteredAnnotationKeyCoordinate			= @"coordinate";
 
 - (void)dealloc {
 	self.containedAnnotations = nil;
-	[super dealloc];
 }
 
 #pragma mark -
@@ -52,14 +51,14 @@ NSString *const kARClusteredAnnotationKeyCoordinate			= @"coordinate";
 		NSString *title = [NSString stringWithFormat:@"%d %@", [self.containedAnnotations count]+1, localizedAnnotations];
 		return title;
 	}
-	return [[_title retain] autorelease];
+	return _title;
 }
 
 - (NSString *)subtitle {
 	if (0 < [self.containedAnnotations count]) {
 		return nil;
 	}
-	return [[_subtitle retain] autorelease];
+	return _subtitle;
 }
 
 #pragma mark -
@@ -77,7 +76,7 @@ NSString *const kARClusteredAnnotationKeyCoordinate			= @"coordinate";
 	}
 	
 	if (clusterAnnotation) {
-		for (ARClusteredAnnotation *annotation in [[self.containedAnnotations retain] autorelease]) {
+		for (ARClusteredAnnotation *annotation in self.containedAnnotations ) {
 			[annotation setClusterAnnotation:clusterAnnotation];
 		}
 		
@@ -91,8 +90,8 @@ NSString *const kARClusteredAnnotationKeyCoordinate			= @"coordinate";
 	}
 	
 	if (self.clusterAnnotation) {
-		NSArray *oldAnnotations = [[self.clusterAnnotation.containedAnnotations retain] autorelease];
-		NSMutableArray *adjustedContainedAnnotations = [[oldAnnotations mutableCopy] autorelease];
+		NSArray *oldAnnotations = self.clusterAnnotation.containedAnnotations;
+		NSMutableArray *adjustedContainedAnnotations = [oldAnnotations mutableCopy];
 		[adjustedContainedAnnotations removeObject:self];
 		self.clusterAnnotation.containedAnnotations = adjustedContainedAnnotations;
 		[self.clusterAnnotation sendKVOUpdate];
@@ -110,7 +109,7 @@ NSString *const kARClusteredAnnotationKeyCoordinate			= @"coordinate";
 		self.clusterAnnotation.containedAnnotations = [NSArray arrayWithObject:self];
 	} else {
 		if (![self.clusterAnnotation.containedAnnotations containsObject:self]) {
-			NSArray *oldAnnotations = [[self.clusterAnnotation.containedAnnotations retain] autorelease];
+			NSArray *oldAnnotations = self.clusterAnnotation.containedAnnotations;
 			self.clusterAnnotation.containedAnnotations = [oldAnnotations arrayByAddingObject:self];
 		}
 	}

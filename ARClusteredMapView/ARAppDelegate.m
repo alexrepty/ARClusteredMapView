@@ -16,21 +16,12 @@
 	viewController = _viewController;
 
 #pragma mark -
-#pragma mark ARAppDelegate construction & destruction
-
-- (void)dealloc {
-	[_window release];
-	[_viewController release];
-    [super dealloc];
-}
-
-#pragma mark -
 #pragma mark UIApplicationDelegate methods
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
-	self.viewController = [[[ARViewController alloc] initWithNibName:@"ARViewController" bundle:nil] autorelease];
+	self.viewController = [[ARViewController alloc] initWithNibName:@"ARViewController" bundle:nil];
 	self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
 

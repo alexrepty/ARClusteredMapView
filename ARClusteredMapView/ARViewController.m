@@ -59,7 +59,6 @@
         pin.subtitle = [NSString stringWithFormat:@"Pin %i subtitle",i+1];
         pin.coordinate = newCoord;
         [pins addObject:pin];
-        [pin release]; 
     }
     
     [self.mapView addAnnotations:pins];
