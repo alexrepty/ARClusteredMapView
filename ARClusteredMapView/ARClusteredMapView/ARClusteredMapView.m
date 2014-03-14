@@ -7,6 +7,11 @@
 //
 
 #import "ARClusteredMapView.h"
+
+// ARClusteredMapView Model Dependencies
+#import "ARClusteredAnnotation.h"
+
+// System Frameworks
 #import <QuartzCore/QuartzCore.h>
 
 static MKZoomScale kARClusteredMapViewMaximumZoom = 20.0;

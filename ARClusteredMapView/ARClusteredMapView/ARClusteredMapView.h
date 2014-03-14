@@ -8,7 +8,7 @@
 
 #import <MapKit/MapKit.h>
 
-#import "ARClusteredAnnotation.h"
+@class ARClusteredAnnotation;
 
 extern NSString *const ARClusteredMapViewDidUpdateClusteringNotification;
 
